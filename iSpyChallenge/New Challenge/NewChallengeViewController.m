@@ -26,6 +26,12 @@
 
 - (IBAction)doneButtonPressed:(id)sender {
     // TODO: Save currentChallenge to CoreData
+    // Nil out the currentChallenge object post-save
+    // Redirect to the Feed, or present the actionSheet for new Challenge
+    self.currentChallenge = nil;
+    self.imageView.image = nil;
+    self.textView.text = nil;
+    [self selectPhoto];
 }
 
 - (void)viewDidLoad {
