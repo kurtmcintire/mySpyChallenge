@@ -10,6 +10,10 @@
 		4F878E3F1803C87F9365D395 /* libPods-iSpyChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C67E0CE36D31FEDBE7247A44 /* libPods-iSpyChallengeTests.a */; };
 		9262D52DD40712D2BE046285 /* libPods-iSpyChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5A457C94513EA9CD9B5346 /* libPods-iSpyChallengeUITests.a */; };
 		BCF9832220AF2D1B1A493539 /* libPods-iSpyChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBDAEA452E50E7940D57A56 /* libPods-iSpyChallenge.a */; };
+		BF8462201FB39A4A00482FE4 /* NearMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF84621E1FB39A4A00482FE4 /* NearMe.storyboard */; };
+		BF8462231FB39A6200482FE4 /* NearMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8462221FB39A6200482FE4 /* NearMeViewController.m */; };
+		BF84622A1FB39C2700482FE4 /* NewChallenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8462291FB39C2700482FE4 /* NewChallenge.storyboard */; };
+		BF84622D1FB39F1100482FE4 /* NewChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF84622B1FB39F1100482FE4 /* NewChallengeViewController.m */; };
 		C326BA671D02394A00CB9EAC /* ChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C326BA661D02394A00CB9EAC /* ChallengeTableViewController.m */; };
 		C33E562E1D092E4C00E184F9 /* RatingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33E562D1D092E4C00E184F9 /* RatingsTableViewController.m */; };
 		C3D5EFEA1D00BF5000A2669B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5EFE91D00BF5000A2669B /* main.m */; };
@@ -63,6 +67,12 @@
 		4951EB247BA1A7D739B51D9B /* Pods-iSpyChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallengeUITests/Pods-iSpyChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		716B58AEB48A3204E96CA11A /* Pods-iSpyChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallenge/Pods-iSpyChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		8788DD4CF4396431C6384EB2 /* Pods-iSpyChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallenge/Pods-iSpyChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		BF84621F1FB39A4A00482FE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iSpyChallenge/Base.lproj/NearMe.storyboard; sourceTree = SOURCE_ROOT; };
+		BF8462211FB39A6200482FE4 /* NearMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NearMeViewController.h; sourceTree = "<group>"; };
+		BF8462221FB39A6200482FE4 /* NearMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NearMeViewController.m; sourceTree = "<group>"; };
+		BF8462291FB39C2700482FE4 /* NewChallenge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewChallenge.storyboard; sourceTree = "<group>"; };
+		BF84622B1FB39F1100482FE4 /* NewChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewChallengeViewController.m; sourceTree = "<group>"; };
+		BF84622C1FB39F1100482FE4 /* NewChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewChallengeViewController.h; sourceTree = "<group>"; };
 		C326BA651D02394A00CB9EAC /* ChallengeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeTableViewController.h; sourceTree = "<group>"; };
 		C326BA661D02394A00CB9EAC /* ChallengeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeTableViewController.m; sourceTree = "<group>"; };
 		C33E562C1D092E4C00E184F9 /* RatingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingsTableViewController.h; sourceTree = "<group>"; };
@@ -176,6 +186,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BF84621D1FB39A1900482FE4 /* Near Me */ = {
+			isa = PBXGroup;
+			children = (
+				BF84621E1FB39A4A00482FE4 /* NearMe.storyboard */,
+				BF8462211FB39A6200482FE4 /* NearMeViewController.h */,
+				BF8462221FB39A6200482FE4 /* NearMeViewController.m */,
+			);
+			path = "Near Me";
+			sourceTree = "<group>";
+		};
+		BF8462251FB39BF000482FE4 /* New Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				BF8462291FB39C2700482FE4 /* NewChallenge.storyboard */,
+				BF84622C1FB39F1100482FE4 /* NewChallengeViewController.h */,
+				BF84622B1FB39F1100482FE4 /* NewChallengeViewController.m */,
+			);
+			path = "New Challenge";
+			sourceTree = "<group>";
+		};
 		C3D5EFDC1D00BF5000A2669B = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +241,8 @@
 				C3D5EFF71D00BF5000A2669B /* Assets.xcassets */,
 				C3D5EFF91D00BF5000A2669B /* LaunchScreen.storyboard */,
 				C3D5EFFC1D00BF5000A2669B /* Info.plist */,
+				BF8462251FB39BF000482FE4 /* New Challenge */,
+				BF84621D1FB39A1900482FE4 /* Near Me */,
 				C3D5F0531D01456B00A2669B /* Data Browser */,
 				C3D5F04F1D013E8500A2669B /* Model */,
 				C3D5EFE81D00BF5000A2669B /* Supporting Files */,
@@ -409,10 +441,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D5F0361D01366C00A2669B /* iSpySampleData in Resources */,
+				BF84622A1FB39C2700482FE4 /* NewChallenge.storyboard in Resources */,
 				C3D5EFFB1D00BF5000A2669B /* LaunchScreen.storyboard in Resources */,
 				C3D5EFF81D00BF5000A2669B /* Assets.xcassets in Resources */,
 				C3D5EFF31D00BF5000A2669B /* Main.storyboard in Resources */,
 				C3D5F0561D0151DD00A2669B /* DataBrowser.storyboard in Resources */,
+				BF8462201FB39A4A00482FE4 /* NearMe.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +609,9 @@
 				C3D5F05C1D015E7200A2669B /* NSArray+RandomElement.m in Sources */,
 				C3D5EFF61D00BF5000A2669B /* iSpyChallenge.xcdatamodeld in Sources */,
 				C3D5F04D1D013E7900A2669B /* Rating+CoreDataProperties.m in Sources */,
+				BF84622D1FB39F1100482FE4 /* NewChallengeViewController.m in Sources */,
 				C3D5EFEA1D00BF5000A2669B /* main.m in Sources */,
+				BF8462231FB39A6200482FE4 /* NearMeViewController.m in Sources */,
 				C3D5F0321D01303E00A2669B /* PhotoController.m in Sources */,
 				C33E562E1D092E4C00E184F9 /* RatingsTableViewController.m in Sources */,
 				C3D5F0471D013E7900A2669B /* Challenge+CoreDataProperties.m in Sources */,
@@ -616,6 +652,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BF84621E1FB39A4A00482FE4 /* NearMe.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF84621F1FB39A4A00482FE4 /* Base */,
+			);
+			name = NearMe.storyboard;
+			sourceTree = "<group>";
+		};
 		C3D5EFF11D00BF5000A2669B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

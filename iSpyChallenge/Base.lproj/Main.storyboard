@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="br2-IQ-SdN">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="br2-IQ-SdN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -12,93 +16,37 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="fxn-AW-MGx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="5n9-6N-TNZ" kind="relationship" relationship="viewControllers" id="htX-S0-kwp"/>
-                        <segue destination="VD6-S4-M5Z" kind="relationship" relationship="viewControllers" id="wzP-gF-ALB"/>
-                        <segue destination="rmC-A0-I5Q" kind="relationship" relationship="viewControllers" id="u5f-at-woa"/>
+                        <segue destination="dMM-dR-Eng" kind="relationship" relationship="viewControllers" id="LhK-RS-mwp"/>
+                        <segue destination="6gg-gv-mig" kind="relationship" relationship="viewControllers" id="H4p-Hx-co5"/>
+                        <segue destination="rmC-A0-I5Q" kind="relationship" relationship="viewControllers" id="2ml-fO-0kX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7X-ia-mpa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2203" y="-1276"/>
         </scene>
-        <!--Near Me-->
-        <scene sceneID="uOk-VN-Xb9">
+        <!--NewChallenge-->
+        <scene sceneID="qcx-Yi-2VL">
             <objects>
-                <viewController id="VD6-S4-M5Z" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Qcs-KP-UzH"/>
-                        <viewControllerLayoutGuide type="bottom" id="Rvk-9i-J27"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pzq-wx-kcf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bh-b6-otY">
-                                <rect key="frame" x="131" y="290" width="338" height="20"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Placeholder for Viewing Challenges Near Me">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="0Bh-b6-otY" firstAttribute="centerY" secondItem="pzq-wx-kcf" secondAttribute="centerY" id="cZz-FZ-aKd"/>
-                            <constraint firstItem="0Bh-b6-otY" firstAttribute="centerX" secondItem="pzq-wx-kcf" secondAttribute="centerX" id="onj-JP-KBS"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Near Me" image="1032-route" id="snE-m9-dqk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EsU-0X-EuV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="NewChallenge" id="dMM-dR-Eng" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="aJv-07-j5t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHF-ft-ICg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2685" y="-327"/>
+            <point key="canvasLocation" x="1862" y="-619"/>
         </scene>
-        <!--New Challenge-->
-        <scene sceneID="OKA-1b-2gM">
+        <!--NearMe-->
+        <scene sceneID="ByW-aR-VMf">
             <objects>
-                <viewController id="5n9-6N-TNZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ILi-5w-SM4"/>
-                        <viewControllerLayoutGuide type="bottom" id="Afl-I0-3sm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="di6-GF-9h5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBd-FZ-nbQ">
-                                <rect key="frame" x="141" y="290" width="318" height="20"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Placeholder for Creating a New Challenge">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="VBd-FZ-nbQ" firstAttribute="centerY" secondItem="di6-GF-9h5" secondAttribute="centerY" id="09h-Qf-7nn"/>
-                            <constraint firstItem="VBd-FZ-nbQ" firstAttribute="centerX" secondItem="di6-GF-9h5" secondAttribute="centerX" id="1Hb-6y-u05"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="New Challenge" image="714-camera" id="P5Q-kT-fpP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UFs-VB-jHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="NearMe" id="6gg-gv-mig" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="FyM-o1-NgO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dpy-Rl-Cdd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723" y="-327"/>
+            <point key="canvasLocation" x="2660" y="-620"/>
         </scene>
         <!--DataBrowser-->
         <scene sceneID="DFU-Y8-2J7">
@@ -111,8 +59,4 @@
             <point key="canvasLocation" x="3016" y="-1276"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="1032-route" width="28" height="26"/>
-        <image name="714-camera" width="28" height="21"/>
-    </resources>
 </document>
