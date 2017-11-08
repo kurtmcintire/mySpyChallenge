@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DataController.h"
 #import "PhotoController.h"
+#import "LocationManager.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) DataController *dataController;
@@ -41,6 +42,9 @@
             [self injectPropertiesInController:controller];
         }
     }
+    
+    LocationManager *locationManager = [LocationManager shared];
+    [locationManager startUpdatingLocation];
     
     return YES;
 }

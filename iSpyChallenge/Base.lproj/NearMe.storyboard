@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,53 +20,122 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="env-RC-rxK">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="OwlBlue"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="UgP-k0-hdQ" kind="relationship" relationship="rootViewController" id="eZ8-9g-mg1"/>
+                        <segue destination="hSo-R7-vss" kind="relationship" relationship="rootViewController" id="pbX-Kc-Yza"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnB-iJ-4WG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1497" y="-259"/>
         </scene>
-        <!--Near Me View Controller-->
-        <scene sceneID="AHv-aW-fTm">
+        <!--Near Me-->
+        <scene sceneID="tdA-Fh-Fdd">
             <objects>
-                <viewController id="UgP-k0-hdQ" customClass="NearMeViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="R7N-9o-zcg">
+                <tableViewController id="hSo-R7-vss" customClass="NearMeTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mTD-OO-YSA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADV-Ti-p1l">
-                                <rect key="frame" x="54" y="323" width="267" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Placeholder for viewing Challenges">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" name="Purple"/>
-                        <viewLayoutGuide key="safeArea" id="ywg-B8-gTA"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mfc-16-cFz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1xo-rC-7R2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChallengeFeedCell" rowHeight="245" id="rQR-hp-ffG" customClass="ChallengeFeedCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="245"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rQR-hp-ffG" id="0Vf-jG-m3K">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="244.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="500-ft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzY-DC-sx8" userLabel="distanceLabel">
+                                            <rect key="frame" x="303.5" y="20" width="51.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" name="OwlTextDark"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="23 wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9p-QH-CXw" userLabel="winsLabel">
+                                            <rect key="frame" x="159.5" y="20" width="56.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" name="OwlTextMedium"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" verticalHuggingPriority="252" text="5/5 Stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqf-ew-svb" userLabel="starsLabel">
+                                            <rect key="frame" x="20" y="20" width="66" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" name="OwlTextMedium"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="A complex hint for my friends. This hint spans multiple lines because it is important and detailed." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sf-40-BWS" userLabel="hintLabel">
+                                            <rect key="frame" x="20" y="59.5" width="335" height="125.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" name="OwlTextDark"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" verticalHuggingPriority="249" text="Created by: Kurt McIntire" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl1-yO-xwh" userLabel="createdByLabel">
+                                            <rect key="frame" x="20" y="205" width="335" height="19.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="19.5" id="Xjj-55-mOF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" name="OwlTextMedium"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3Sf-40-BWS" firstAttribute="leading" secondItem="0Vf-jG-m3K" secondAttribute="leading" constant="20" id="1dr-es-58G"/>
+                                        <constraint firstItem="qzY-DC-sx8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="l9p-QH-CXw" secondAttribute="trailing" id="8kl-DN-VbV"/>
+                                        <constraint firstAttribute="trailing" secondItem="3Sf-40-BWS" secondAttribute="trailing" constant="20" id="8uC-Z2-cDQ"/>
+                                        <constraint firstItem="nl1-yO-xwh" firstAttribute="leading" secondItem="0Vf-jG-m3K" secondAttribute="leading" constant="20" id="BKY-OY-8QM"/>
+                                        <constraint firstItem="nl1-yO-xwh" firstAttribute="top" secondItem="3Sf-40-BWS" secondAttribute="bottom" constant="20" id="CZ8-UI-Gio"/>
+                                        <constraint firstItem="Pqf-ew-svb" firstAttribute="leading" secondItem="0Vf-jG-m3K" secondAttribute="leading" constant="20" id="FMe-jN-nKI"/>
+                                        <constraint firstItem="Pqf-ew-svb" firstAttribute="top" secondItem="0Vf-jG-m3K" secondAttribute="top" constant="20" id="NKG-cE-aeX"/>
+                                        <constraint firstItem="3Sf-40-BWS" firstAttribute="top" secondItem="Pqf-ew-svb" secondAttribute="bottom" constant="20" id="Rku-eK-wTR"/>
+                                        <constraint firstItem="l9p-QH-CXw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pqf-ew-svb" secondAttribute="trailing" id="VxJ-MU-09G"/>
+                                        <constraint firstAttribute="trailing" secondItem="nl1-yO-xwh" secondAttribute="trailing" constant="20" id="XAH-oO-y4E"/>
+                                        <constraint firstItem="l9p-QH-CXw" firstAttribute="centerX" secondItem="0Vf-jG-m3K" secondAttribute="centerX" id="aHH-xF-AKH"/>
+                                        <constraint firstAttribute="trailing" secondItem="qzY-DC-sx8" secondAttribute="trailing" constant="20" id="abX-1A-FJg"/>
+                                        <constraint firstAttribute="bottom" secondItem="nl1-yO-xwh" secondAttribute="bottom" constant="20" id="cNO-Xo-FpQ"/>
+                                        <constraint firstItem="qzY-DC-sx8" firstAttribute="top" secondItem="0Vf-jG-m3K" secondAttribute="top" constant="20" id="efe-xc-6pX"/>
+                                        <constraint firstItem="l9p-QH-CXw" firstAttribute="top" secondItem="0Vf-jG-m3K" secondAttribute="top" constant="20" id="wuK-n8-AEy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="createdByLabel" destination="nl1-yO-xwh" id="rl7-8m-Mq0"/>
+                                    <outlet property="distanceLabel" destination="qzY-DC-sx8" id="sqR-rU-J8h"/>
+                                    <outlet property="hintLabel" destination="3Sf-40-BWS" id="xp0-kr-kPN"/>
+                                    <outlet property="starsLabel" destination="Pqf-ew-svb" id="N9M-Ia-5QG"/>
+                                    <outlet property="winsLabel" destination="l9p-QH-CXw" id="zdS-mn-cps"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hSo-R7-vss" id="iHc-n9-wVS"/>
+                            <outlet property="delegate" destination="hSo-R7-vss" id="Wbd-Ey-CCC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Near Me" id="Np5-xh-yHb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IsE-9u-Yip" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="-260"/>
+            <point key="canvasLocation" x="2184.8000000000002" y="-260.41979010494754"/>
         </scene>
     </scenes>
     <resources>
         <image name="1032-route" width="28" height="26"/>
-        <namedColor name="Purple">
-            <color red="0.42745098040000001" green="0.4431372549" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="OwlBlue">
+            <color red="0.38400000333786011" green="0.70599997043609619" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OwlTextDark">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OwlTextMedium">
+            <color red="0.44699999690055847" green="0.44699999690055847" blue="0.44699999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

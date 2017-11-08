@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +21,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="snc-TN-pbR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="OwlBlue"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -30,7 +38,7 @@
             </objects>
             <point key="canvasLocation" x="1497" y="-259"/>
         </scene>
-        <!--New Challenge View Controller-->
+        <!--New Challenge-->
         <scene sceneID="dhD-TP-4zT">
             <objects>
                 <viewController id="Ee9-NV-j4J" customClass="NewChallengeViewController" sceneMemberID="viewController">
@@ -53,10 +61,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ISu-ov-JXl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MPD-ld-APg"/>
+                    <navigationItem key="navigationItem" title="New Challenge" id="MPD-ld-APg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0y-5a-Ef9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,5 +73,8 @@
     </scenes>
     <resources>
         <image name="714-camera" width="28" height="21"/>
+        <namedColor name="OwlBlue">
+            <color red="0.38400000333786011" green="0.70599997043609619" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
