@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataController.h"
+#import "PhotoController.h"
 
 @interface NewChallengeViewController : UIViewController
-
+@property (nonatomic, strong) DataController *dataController;
+@property (nonatomic, strong) PhotoController *photoController;
 @end

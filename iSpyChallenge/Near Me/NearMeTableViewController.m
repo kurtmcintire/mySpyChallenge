@@ -23,12 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupNavigationBar];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)setupNavigationBar {
@@ -199,14 +193,6 @@
     cell.hintLabel.text = challenge.hint;
     cell.starsLabel.text = stars;
     cell.winsLabel.text = wins;
-    
-    /*
-    [[cell textLabel] setText:challenge.hint];
-    [[cell detailTextLabel] setText:latlon];
-
-    UIImage *photo = [self.photoController photoWithName:challenge.photoHref];
-    [[cell imageView] setImage:photo];
-    */
 }
 
 @end
