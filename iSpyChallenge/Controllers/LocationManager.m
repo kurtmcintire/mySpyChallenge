@@ -26,6 +26,10 @@
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         self.locationManager.distanceFilter = 100; // meters
         self.locationManager.delegate = self;
+        
+        if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+            [self.locationManager requestAlwaysAuthorization];
+        }
     }
     return self;
 }

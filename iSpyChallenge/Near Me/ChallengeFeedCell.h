@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ChallengeFeedCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *winsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *starsLabel;
